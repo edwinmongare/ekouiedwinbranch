@@ -1,0 +1,139 @@
+﻿@model AddBusinessViewModel
+@{
+    ViewData["Title"] = "AddBusiness";
+    Layout = "~/Views/Shared/_BusinessListLayout.cshtml";
+}
+
+<div class="col-lg-12 col-12 ">
+    <div class="statbox widget box box-shadow shadow-sm">
+
+
+        <div class=" animated-underline-content">
+
+            <ul class="nav nav-tabs  mb-3" id="animateLine" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="animated-underline-home-tab" data-toggle="tab" href="#animated-underline-home" role="tab" aria-controls="animated-underline-home" aria-selected="true">
+                        <h1> New Business</h1>
+                    </a>
+                </li>
+
+
+            </ul>
+
+            <div class="tab-content" id="animateLineContent-4">
+                <div class="tab-pane fade show active" id="animated-underline-home" role="tabpanel" aria-labelledby="animated-underline-home-tab">
+                    <div id="flLoginForm" class="col-lg-12">
+                        <div class="">
+                            <div class="">
+                                <div class="row">
+                                    <div class="col-xl-9 col-md-9 col-sm-9 col-9">
+                                        <h4></h4>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade " id="contactModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered bd-example-modal-lg modal-lg" role="document">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header" id="registerModalLabel">
+                                            <h4 class="modal-title">Edit Business Contacts</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+                                        </div>
+                                        <div class="modal-body">
+
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="">
+                                <form asp-action="AddBusiness" asp-controller="Home" asp-antiforgery="true" method="post">
+                                    <div class="form-row mb-4">
+                                        <div class="col">
+                                            <input asp-for="Name" type="text" required class="form-control" placeholder="Business Name">
+                                        </div>
+                                        <div class="col">
+                                            <select asp-for="BusinessType" required class="form-control form-control-lg">
+                                                <option value="">Business Type</option>
+                                                <option value="0">MSME</option>
+                                                <option value="1">SME</option>
+
+                                            </select>
+                                        </div>
+                                        <div class="col">
+                                            <select asp-for="PlanId" required class="form-control form-control-lg">
+                                                <option value="">Select Plan</option>
+                                                @foreach (var curr in ViewBag.Plans)
+                                                {
+                                                    <option value="@curr.Id">@curr.Name</option>
+                                                }
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-row mb-4">
+                                        <div class="col">
+                                            <div class="col">
+                                                <select asp-for="AgentId" required class="form-control form-control-lg">
+                                                    <option value="">Select Agent</option>
+                                                    @foreach (var curr in ViewBag.Agents)
+                                                    {
+                                                        <option value="@curr.Id">@curr.Code</option>
+                                                    }
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Business PIN">
+                                        </div>
+                                        <div class="col">
+                                            <select asp-for="CurrencyId" required class="form-control form-control-lg">
+                                                <option value="">Select Currency</option>
+                                                @foreach (var curr in ViewBag.Currencies)
+                                                {
+                                                    <option value="@curr.Id">@curr.Code</option>
+                                                }
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-row mb-4">
+                                        <div class="col">
+                                            <input asp-for="PhysicalAddress" type="text" class="form-control" placeholder="Physical Location">
+                                        </div>
+                                        <div class="col">
+                                            <input asp-for="PostalAddress" type="text" class="form-control" placeholder="Postal Address">
+                                        </div>
+                                    </div>
+                                    <div class="form-row mb-4">
+                                        <div class="col">
+                                            <input asp-for="Website" required type="number" min="0" class="form-control" placeholder="Business Phone Number">
+                                        </div>
+                                        <div class="col">
+                                            <input asp-for="Email" type="email" class="form-control" placeholder="Business Email Address">
+                                        </div>
+                                    </div>
+                                    <input type="submit" name="time" class="mb-4 btn btn-primary">
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,119 @@
+﻿<div id="flLoginForm" class="col-lg-12">
+    <div class="">
+        <div class="">
+            <div class="row">
+                <div class="col-xl-9 col-md-9 col-sm-9 col-9">
+                    <h1 class="">Personal Details</h1>
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-3 col-3">
+                    <button type="button" class="btn btn-primary mb-2 ml-lg-5" data-toggle="modal" data-target="#registerModal">
+                        <h5 class="" style="color:white">Edit Personal Details</h5>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade " id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered bd-example-modal-lg modal-lg" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header" id="registerModalLabel">
+                        <h4 class="modal-title">Edit Personal Details</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="mt-0">
+                            <div class="form-group mb-4">
+                                <label for="fullName">Full  Name</label>
+                                <input type="text" class="form-control" id="lFullName" value="enter full name">
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="fullName">Agent Code</label>
+                                <input type="email" class="form-control" id="lEmail" value="1234abcd">
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="fullName">Business Pin</label>
+                                <input type="text" class="form-control" id="lPassword" value="123456">
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="fullName">
+                                    Business Slogan
+                                </label>
+                                <input type="text" class="form-control" id="lPassword" value="My Business One Slogan" />
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="fullName">
+                                    Receipt Footnote
+                                </label>
+                                <input type="text" class="form-control" id="lPassword" value="My Business One Receipt Foot Note">
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="fullName">
+                                    Invoice Footnote
+                                </label>
+                                <input type="text" class="form-control" id="lPassword" value="My Business One Invoice Foot Note">
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="fullName">
+                                    Quotation Footnote
+                                </label>
+                                <input type="text" class="form-control" id="lPassword" value="My Business One Quotation Foot Note">
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-2 mb-2 btn-block">Submit</button>
+                        </form>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="">
+            <form>
+                <div class="form-group mb-4">
+                    <label for="fullName">Full Business Name</label>
+                    <input type="text" class="form-control" id="lFullName" value="MyBusinessOne" readonly>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="fullName">Agent Code</label>
+                    <input type="email" class="form-control" id="lEmail" value="1234abcd" readonly>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="fullName">Business Pin</label>
+                    <input type="text" class="form-control" id="lPassword" value="123456" readonly>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="fullName">
+                        Business Slogan
+                    </label>
+                    <input type="text" class="form-control" id="lPassword" value="My Business One Slogan" readonly>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="fullName">
+                        Receipt Footnote
+                    </label>
+                    <input type="text" class="form-control" id="lPassword" value="My Business One Receipt Foot Note" readonly>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="fullName">
+                        Invoice Footnote
+                    </label>
+                    <input type="text" class="form-control" id="lPassword" value="My Business One Invoice Foot Note" readonly>
+                </div>
+                <div class="form-group mb-4">
+                    <label for="fullName">
+                        Quotation Footnote
+                    </label>
+                    <input type="text" class="form-control" id="lPassword" value="My Business One Quotation Foot Note" readonly>
+                </div>
+
+                @*<button type="submit" class="btn btn-primary mt-4 col-12 ">Submit</button>*@
+            </form>
+
+
+        </div>
+    </div>
+</div>

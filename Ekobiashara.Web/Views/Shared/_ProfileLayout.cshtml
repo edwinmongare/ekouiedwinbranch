@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>@ViewData["Title"] - Ekobiashara</title>
+    <link rel="icon" type="image/x-icon" href="~/assets/img/favicon.ico" />
+    <link href="~/assets/css/loader.css" rel="stylesheet" />
+    <script src="~/assets/js/loader.js"></script>
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+    <link href="~/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/assets/css/plugins.css" rel="stylesheet" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <link href="~/plugins/apex/apexcharts.css" rel="stylesheet" />
+    <link href="assets/css/dashboard/dash_1.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <!-- ALL OTHER PLUGINS CSS FILES -->
+    <link rel="stylesheet" href="~/plugins/font-icons/fontawesome/css/regular.css">
+    <link rel="stylesheet" href="~/plugins/font-icons/fontawesome/css/fontawesome.css">
+    <link href="~/assets/css/scrollspyNav.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/components/cards/card.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/components/tabs-accordian/custom-tabs.css" rel="stylesheet" type="text/css" />
+  
+    <link href="~/assets/css/dashboard/dash_1.css" rel="stylesheet" type="text/css" />
+    <!-- END OF ALL OTHER PLUGINS CSS FILES -->
+
+</head>
+<body>
+    <!-- BEGIN LOADER -->
+    <div id="load_screen"> <div class="loader"> <div class="loader-content"> <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 792 723" style="enable-background:new 0 0 792 723;" xml:space="preserve"> <g> <g> <path class="st0" d="M213.9,584.4c-47.4-25.5-84.7-60.8-111.8-106.1C75,433.1,61.4,382,61.4,324.9c0-57,13.6-108.1,40.7-153.3 S166.5,91,213.9,65.5s100.7-38.2,159.9-38.2c49.9,0,95,8.8,135.3,26.3s74.1,42.8,101.5,75.7l-85.5,78.9 c-38.9-44.9-87.2-67.4-144.7-67.4c-35.6,0-67.4,7.8-95.4,23.4s-49.7,37.4-65.4,65.4c-15.6,28-23.4,59.8-23.4,95.4 s7.8,67.4,23.4,95.4s37.4,49.7,65.4,65.4c28,15.6,59.7,23.4,95.4,23.4c57.6,0,105.8-22.7,144.7-68.2l85.5,78.9 c-27.4,33.4-61.4,58.9-102,76.5c-40.6,17.5-85.8,26.3-135.7,26.3C314.3,622.7,261.3,809.9,213.9,584.4z" /> </g> <circle class="st1" cx="375.4" cy="322.9" r="100" /> </g> <g> <circle class="st2" cx="275.4" cy="910" r="65"></circle> <circle class="st4" cx="475.4" cy="910" r="65"></circle> </g> </svg> </div></div></div>
+    <!--  END LOADER -->
+    <!--  BEGIN NAVBAR  -->
+    <div class="header-container fixed-top">
+        <header class="header navbar navbar-expand-sm">
+            <ul class="navbar-nav theme-brand flex-row  text-center">
+                <li class="nav-item theme-logo">
+                    <a href="index.html">
+                        <img src="~/assets/img/eko_logo.png" class="navbar-logo" alt="logo">
+                    </a>
+                </li>
+
+                <li class="nav-item toggle-sidebar">
+                    <a href="javascript:void(0);" class="sidebarCollapse" data-placement="bottom"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3" y2="6"></line><line x1="3" y1="12" x2="3" y2="12"></line><line x1="3" y1="18" x2="3" y2="18"></line></svg></a>
+                </li>
+            </ul>
+            <ul class="navbar-item flex-row navbar-dropdown">
+               
+            </ul>
+            <ul class="navbar-item flex-row search-ul">
+            </ul>
+            <ul class="navbar-item flex-row navbar-dropdown">
+
+
+                <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">
+                    <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                    </a>
+                    <div class="dropdown-menu position-absolute animated fadeInUp" aria-labelledby="userProfileDropdown">
+                        <div class="user-profile-section">
+                            <div class="media mx-auto">
+                                <img src="~/assets/img/90x90.jpg" class="img-fluid mr-2" alt="avatar">
+                                <div class="media-body">
+                                    <h5>Edwin Monga'are</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="user_profile.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> <span>My Profile</span>
+                            </a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="apps_mailbox.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-inbox"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg> <span>My Mesaages</span>
+                            </a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="auth_lockscreen.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> <span>Lock Screen</span>
+                            </a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="auth_login.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg> <span>Log Out</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </header>
+    </div>
+    <!--  END NAVBAR  -->
+    <!--  BEGIN MAIN CONTAINER  -->
+    <div class="main-container" id="container">
+
+        <div class="overlay"></div>
+        <div class="search-overlay"></div>
+
+        <!--  BEGIN SIDEBAR  -->
+        <div class="sidebar-wrapper sidebar-theme">
+
+            <nav id="sidebar">
+                
+
+                <div class="shadow-bottom"></div>
+                <ul class="list-unstyled menu-categories" id="accordionExample">
+                    <li class="menu active">
+                        <a href="/Home/" aria-expanded="true" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                                <span>My Profile</span>
+                            </div>
+
+                        </a>
+
+
+                    <li class="menu menu-heading">
+                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg><span>Menu</span></div>
+                    </li>
+
+                    <li class="menu">
+                        <a href="/Account/Profile" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                                <span>Manage My Profile</span>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li class="menu">
+                        <a href="/Account/Password" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                                <span>Change Password</span>
+                            </div>
+                        </a>
+
+                    </li>
+                    <hr />
+                </ul>
+
+            </nav>
+
+        </div>
+        <!--  END SIDEBAR  -->
+        <!--  BEGIN CONTENT AREA  -->
+        <div id="content" class="main-content">
+          
+                <div class="row">
+
+                    @RenderBody()
+                </div>
+
+
+          
+            @*<div class="footer-wrapper">
+                <div class="footer-section f-section-1">
+                    <p class="">Copyright Eko Biashara © 2020, All rights reserved.</p>
+                </div>
+
+            </div>*@
+        </div>
+        <!--  END CONTENT AREA  -->
+    </div>
+    <!-- END MAIN CONTAINER -->
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="~/assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="~/bootstrap/js/popper.min.js"></script>
+    <script src="~/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="~/assets/js/app.js"></script>
+    <!-- ALL OTHER PLUGINS JS FILES -->
+    <script src="~/plugins/highlight/highlight.pack.js"></script>
+    <script src="~/assets/js/scrollspyNav.js"></script>
+    <script src="~/plugins/blockui/jquery.blockUI.min.js"></script>
+    <script src="~/assets/js/dashboard/dash_1.js"></script>
+    <!-- END OF ALL OTHER PLUGINS JS FILES -->
+    <script>
+        $(document).ready(function () {
+            App.init();
+        });
+    </script>
+    <script src="~/assets/js/custom.js"></script>
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    <script src="~/plugins/apex/apexcharts.min.js"></script>
+    <script src="assets/js/dashboard/dash_1.js"></script>
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>

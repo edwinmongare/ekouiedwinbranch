@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Eko Biashara|Business Information";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-lg-12 col-12 layout-spacing">
+    <div class="statbox widget box box-shadow shadow-sm">
+        
+        
+        <div class="animated-underline-content">
+
+            <ul class="nav nav-pills   mb-3" id="icon-pills-tab" role="tablist">
+               
+                <li class="nav-item">
+                    <a class="nav-link active" id="animated-underline-home-tab" data-toggle="tab" href="#animated-underline-home" role="tab" aria-controls="animated-underline-home" aria-selected="true">
+                        Point Of Sale
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " id="animated-underline-home-tab" data-toggle="tab" href="#animated-underline-listofsales" role="tab" aria-controls="animated-underline-home" aria-selected="true">
+                        List Of Sales
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="animated-underline-profile-tab" data-toggle="tab" href="#animated-underline-profile" role="tab" aria-controls="animated-underline-profile" aria-selected="false">
+                        Quotations
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="animated-underline-profile-tab" data-toggle="tab" href="#animated-underline-QuotationsList" role="tab" aria-controls="animated-underline-profile" aria-selected="false">
+                        Quotations List
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="tab-content" id="animateLineContent-4">
+                <div class="tab-pane fade show active" id="animated-underline-home" role="tabpanel" aria-labelledby="animated-underline-home-tab">
+                    @{
+                        await Html.RenderPartialAsync("_PointOfSalePartial");
+                    }
+
+                </div>
+                <div class="tab-pane fade" id="animated-underline-listofsales" role="tabpanel" aria-labelledby="animated-underline-profile-tab">
+
+                    @{
+                        await Html.RenderPartialAsync("_ListOfSalesPartial");
+                    }
+
+                </div>
+                <div class="tab-pane fade" id="animated-underline-profile" role="tabpanel" aria-labelledby="animated-underline-profile-tab">
+                    @{
+                        await Html.RenderPartialAsync("_QuotationsPartial");
+                    }
+                </div>
+                <div class="tab-pane fade" id="animated-underline-QuotationsList" role="tabpanel" aria-labelledby="animated-underline-profile-tab">
+                    @{
+                        await Html.RenderPartialAsync("_QuotationsListPartial");
+                    }
+                </div>
+
+            </div>
+
+           
+        </div>
+    </div>
+</div>

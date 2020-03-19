@@ -1,0 +1,6 @@
+{
+  "ConnectionStrings": {
+    "EkoDatabase": "Server=tcp:ekobiashara.database.windows.net,1433;Initial Catalog=EkoDb;Persist Security Info=False;User ID=ekoadmin;Password=#Karibu2020;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=6000;",
+   // "EkoDatabase": "Server=localhost\\SQLEXPRESS;Database=EkoDb;Trusted_Connection=True;"
+  }
+}

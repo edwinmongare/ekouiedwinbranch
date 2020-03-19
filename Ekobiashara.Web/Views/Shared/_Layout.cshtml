@@ -1,0 +1,604 @@
+﻿@inject Microsoft.ApplicationInsights.AspNetCore.JavaScriptSnippet JavaScriptSnippet
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>@ViewData["Title"] - Ekobiashara</title>
+    <link rel="icon" type="image/x-icon" href="~/assets/img/favicon.ico" />
+    <link href="~/assets/css/loader.css" rel="stylesheet" />
+    <script src="~/assets/js/loader.js"></script>
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+    <link href="~/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/assets/css/plugins.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" rel="stylesheet" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <link href="~/plugins/apex/apexcharts.css" rel="stylesheet" />
+    <link href="~/assets/css/dashboard/dash_1.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <!-- ALL OTHER PLUGINS CSS FILES -->
+    <link rel="stylesheet" href="~/plugins/font-icons/fontawesome/css/regular.css">
+    <link rel="stylesheet" href="~/plugins/font-icons/fontawesome/css/fontawesome.css">
+    <link href="~/assets/css/scrollspyNav.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/components/cards/card.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/components/tabs-accordian/custom-tabs.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/dashboard/dash_1.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="~/plugins/jquery-step/jquery.steps.css">
+    <link href="~/plugins/file-upload/file-upload-with-preview.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="~/plugins/table/datatable/datatables.css">
+    <link rel="stylesheet" type="text/css" href="~/plugins/table/datatable/custom_dt_html5.css">
+    <link rel="stylesheet" type="text/css" href="~/plugins/table/datatable/dt-global_style.css">
+    <link href="~/assets/css/components/custom-modal.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/elements/color_library.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/components/custom-countdown.css" rel="stylesheet" type="text/css">
+    <link href="~/assets/css/elements/miscellaneous.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="~/assets/css/forms/theme-checkbox-radio.css">
+    <link href="~/assets/css/tables/table-basic.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="~/plugins/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="~/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css">
+    <link href="~/assets/css/elements/custom-typography.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/pages/contact_us.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="~/plugins/bootstrap-select/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/forms/custom-clipboard.css">
+    <link href="~/plugins/flatpickr/custom-flatpickr.css" rel="stylesheet" type="text/css">
+    <link href="~/plugins/flatpickr/flatpickr.css" rel="stylesheet" type="text/css">
+    <link href="~/assets/css/forms/theme-checkbox-radio.css" rel="stylesheet" type="text/css" />
+    <link href="~/plugins/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+    <link href="~/plugins/fullcalendar/custom-fullcalendar.advance.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="~/assets/css/forms/switches.css">
+    <link href="~/plugins/pricing-table/css/component.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/users/user-profile.css" rel="stylesheet" type="text/css" />
+    <link href="~/plugins/drag-and-drop/dragula/dragula.css" rel="stylesheet" type="text/css" />
+    <link href="~/plugins/drag-and-drop/dragula/example.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/elements/search.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="~/plugins/dropify/dropify.min.css">
+    <link href="~/assets/css/users/account-setting.css" rel="stylesheet" type="text/css" />
+<<<<<<< HEAD
+=======
+    <link href="~/assets/css/scrollspyNav.css" rel="stylesheet" type="text/css" />
+>>>>>>> 8d4436eda532d4ecd69a3c9dcee16a7bea0dd548
+    <link href="~/plugins/animate/animate.css" rel="stylesheet" type="text/css" />
+    <script src="~/plugins/sweetalerts/promise-polyfill.js"></script>
+    <link href="~/plugins/sweetalerts/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/plugins/sweetalerts/sweetalert.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/components/custom-sweetalert.css" rel="stylesheet" type="text/css" />
+<<<<<<< HEAD
+    <link href="~/assets/css/apps/invoice.css" rel="stylesheet" type="text/css" />
+    @*<link href="~/assets/css/dashboard/dash_2.css" rel="stylesheet" type="text/css" />*@
+  
+=======
+    <link href="~/assets/css/pages/error/style-500.css" rel="stylesheet" type="text/css" />
+>>>>>>> 8d4436eda532d4ecd69a3c9dcee16a7bea0dd548
+    <style>
+        .widget {
+            margin-bottom: 10px;
+        }
+
+        .widget-content-area {
+            border-radius: 6px;
+        }
+
+        .daterangepicker.dropdown-menu {
+            z-index: 1059;
+        }
+    </style>
+    <style>
+        #demo_vertical::-ms-clear, #demo_vertical2::-ms-clear {
+            display: none;
+        }
+
+        input#demo_vertical {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        input#demo_vertical2 {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    </style>
+    <style>
+        #formValidate .wizard > .content {
+            min-height: 25em;
+        }
+
+        #example-vertical.wizard > .content {
+            min-height: 24.5em;
+        }
+    </style>
+    <!-- END OF ALL OTHER PLUGINS CSS FILES -->
+
+    @Html.Raw(JavaScriptSnippet.FullScript)
+</head>
+<body>
+    <!-- BEGIN LOADER -->
+    <div id="load_screen"> <div class="loader"> <div class="loader-content"> <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 792 723" style="enable-background:new 0 0 792 723;" xml:space="preserve"> <g> <g> <path class="st0" d="M213.9,584.4c-47.4-25.5-84.7-60.8-111.8-106.1C75,433.1,61.4,382,61.4,324.9c0-57,13.6-108.1,40.7-153.3 S166.5,91,213.9,65.5s100.7-38.2,159.9-38.2c49.9,0,95,8.8,135.3,26.3s74.1,42.8,101.5,75.7l-85.5,78.9 c-38.9-44.9-87.2-67.4-144.7-67.4c-35.6,0-67.4,7.8-95.4,23.4s-49.7,37.4-65.4,65.4c-15.6,28-23.4,59.8-23.4,95.4 s7.8,67.4,23.4,95.4s37.4,49.7,65.4,65.4c28,15.6,59.7,23.4,95.4,23.4c57.6,0,105.8-22.7,144.7-68.2l85.5,78.9 c-27.4,33.4-61.4,58.9-102,76.5c-40.6,17.5-85.8,26.3-135.7,26.3C314.3,622.7,261.3,809.9,213.9,584.4z" /> </g> <circle class="st1" cx="375.4" cy="322.9" r="100" /> </g> <g> <circle class="st2" cx="275.4" cy="910" r="65"></circle> <circle class="st4" cx="475.4" cy="910" r="65"></circle> </g> </svg> </div></div></div>
+    <!--  END LOADER -->
+    <!--  BEGIN NAVBAR  -->
+    <div class="header-container fixed-top">
+        <header class="header navbar navbar-expand-sm">
+            <ul class="navbar-nav theme-brand flex-row  text-center">
+                <li class="nav-item theme-logo">
+                    <a href="/Home/DashBoard/">
+                        <img src="~/assets/img/eko_logo.png" class="navbar-logo" alt="logo">
+                    </a>
+                </li>
+
+                <li class="nav-item toggle-sidebar">
+                    <a href="javascript:void(0);" class="sidebarCollapse" data-placement="bottom"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3" y2="6"></line><line x1="3" y1="12" x2="3" y2="12"></line><line x1="3" y1="18" x2="3" y2="18"></line></svg></a>
+                </li>
+            </ul>
+            @if (ViewBag.Count > 0)
+            {
+                <ul class="navbar-item flex-row navbar-dropdown">
+                    <li class="nav-item dropdown apps-dropdown more-dropdown md-hidden">
+                        <div class="dropdown  custom-dropdown-icon">
+                            <select class="dropdown-toggle btn">
+
+                                @foreach (var item in ViewBag.Branches)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+
+                            </select>
+
+                        </div>
+                    </li>
+                </ul>
+            }
+            <ul class="navbar-item flex-row search-ul">
+            </ul>
+            <ul class="navbar-item flex-row navbar-dropdown">
+
+
+                <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">
+                    <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                    </a>
+                    <div class="dropdown-menu position-absolute animated fadeInUp" aria-labelledby="userProfileDropdown">
+                        <div class="user-profile-section">
+                            <div class="media mx-auto">
+                                <img src="~/assets/img/default_upload.png" class="img-fluid mr-2" alt="avatar">
+                                <div class="media-body">
+                                    <h5>Edwin Monga'are</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="/Home/user_profile/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> <span>My Profile</span>
+                            </a>
+                        </div>
+
+                        <div class="dropdown-item">
+                            <a href="auth_login.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg> <span>Log Out</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </header>
+    </div>
+    <!--  END NAVBAR  -->
+    <!--  BEGIN MAIN CONTAINER  -->
+    <div class="main-container" id="container">
+
+        <div class="overlay"></div>
+        <div class="search-overlay"></div>
+
+        <!--  BEGIN SIDEBAR  -->
+        <div class="sidebar-wrapper sidebar-theme">
+
+            <nav id="sidebar">
+                @*<div class="profile-info">
+                        <figure class="user-cover-image"></figure>
+                        <div class="user-info">
+                            <img src="~/assets/img/90x90.jpg" alt="avatar">
+                            <h6 class="">MY Business One</h6>
+
+                        </div>
+                    </div>*@
+
+                <div class="shadow-bottom"></div>
+                <ul class="list-unstyled menu-categories" id="accordionExample">
+                    <li class="menu active">
+                        <a href="/Home/DashBoard/" aria-expanded="true" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                                <span>Dashboard</span>
+                            </div>
+
+                        </a>
+
+
+                    <li class="menu menu-heading">
+                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg><span>Menu</span></div>
+                    </li>
+
+                    <li class="menu">
+                        <a href="/Home/BusinessInformation" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                                <span>Business Information</span>
+                            </div>
+                        </a>
+
+                    </li>
+                    <hr />
+                    <li class="menu">
+                        <a href="/Home/Sales/" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                                <span>Sales</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="menu">
+                        <a href="/Home/Customers/" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                                <span>Customers</span>
+                            </div>
+                        </a>
+
+                    </li>
+                    <hr />
+                    <li class="menu">
+                        <a href="/Home/Purchases/" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+
+                                <span>Purchases</span>
+                            </div>
+                        </a>
+
+                    </li>
+
+                    <li class="menu">
+                        <a href="/Home/Expenses/" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+
+                                <span>Expenses</span>
+                            </div>
+                        </a>
+
+                    </li>
+
+                    <li class="menu">
+                        <a href="/Home/Suppliers/" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+
+                                <span>Suppliers</span>
+                            </div>
+                        </a>
+
+                    </li>
+                    <hr />
+                    <li class="menu">
+                        <a href="/Home/ProductAndServices" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-package"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                                <span>
+                                    Product and Services
+                                </span>
+                            </div>
+                        </a>
+
+                    </li>
+
+                    <li class="menu">
+                        <a href="/Home/Inventories/" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-server"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                                <span>
+                                    Inventories
+                                </span>
+                            </div>
+                        </a>
+
+                    </li>
+                    <hr />
+                    <li class="menu">
+                        <a href="/Home/InternalTransactions/" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                                <span>
+                                    Internal Transactions
+                                </span>
+                            </div>
+                        </a>
+
+                    </li>
+
+                    <li class="menu">
+                        <a href="/Home/Taxes/" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                <span>
+                                    Taxes
+                                </span>
+                            </div>
+                        </a>
+
+                    </li>
+                    <hr />
+                    <li class="menu">
+                        <a href="/Home/Accounting/" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder-minus"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path><line x1="9" y1="14" x2="15" y2="14"></line></svg>
+                                <span>
+                                    Accounting
+                                </span>
+                            </div>
+                        </a>
+
+                    </li>
+
+                    <li class="menu">
+                        <a href="/Home/Reports/" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                <span>
+                                    Reports
+                                </span>
+                            </div>
+                        </a>
+
+                    </li>
+                    <hr />
+                    <li class="menu">
+                        <a href="/Home/Surveliance/" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                                <span>
+                                    Surverilance
+                                </span>
+                            </div>
+                        </a>
+
+                    </li>
+
+                    <li class="menu">
+                        <a href="/Home/FeedBack/" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-help-circle"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                                <span>
+                                    Feedback
+                                </span>
+                            </div>
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </nav>
+
+        </div>
+        <!--  END SIDEBAR  -->
+        <!--  BEGIN CONTENT AREA  -->
+        @*<div id="content" class="main-content">
+                <div class="layout-px-spacing">
+                    <div class="row layout-top-spacing">
+
+                        @RenderBody()
+                    </div>
+
+
+                </div>
+                <div class="footer-wrapper">
+                    <div class="footer-section f-section-1">
+                        <p class="">Copyright Eko Biashara © 2020, All rights reserved.</p>
+                    </div>
+
+                </div>
+            </div>*@
+        <div id="content" class="main-content">
+
+            <div class="row" id="cancel-row ">
+
+                @RenderBody()
+            </div>
+
+
+
+            @*<div class="footer-wrapper">
+                    <div class="footer-section f-section-1">
+                        <p class="">Copyright Eko Biashara © 2020, All rights reserved.</p>
+                    </div>
+
+                </div>*@
+        </div>
+        <!--  END CONTENT AREA  -->
+    </div>
+    <!-- END MAIN CONTAINER -->
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="~/assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="~/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="~/bootstrap/js/popper.min.js"></script>
+    <script src="~/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="~/assets/js/app.js"></script>
+    <!-- ALL OTHER PLUGINS JS FILES -->
+    <script src="~/plugins/highlight/highlight.pack.js"></script>
+    <script src="~/assets/js/scrollspyNav.js"></script>
+    <script src="~/plugins/blockui/jquery.blockUI.min.js"></script>
+    <script src="~/assets/js/dashboard/dash_1.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    <!-- END OF ALL OTHER PLUGINS JS FILES -->
+    <script>
+        $(document).ready(function () {
+            App.init();
+        });
+    </script>
+    <script src="~/assets/js/custom.js"></script>
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    <script src="~/plugins/apex/apexcharts.min.js"></script>
+    <script src="~/assets/js/dashboard/dash_1.js"></script>
+    <script src="~/plugins/jquery-step/jquery.steps.min.js"></script>
+    <script src="~/plugins/jquery-step/custom-jquery.steps.js"></script>
+    <script src="~/assets/js/forms/bootstrap_validation/bs_validation_script.js"></script>
+    <script src="~/plugins/file-upload/file-upload-with-preview.min.js"></script>
+    <script src="~/plugins/table/datatable/datatables.js"></script>
+    <script src="~/plugins/table/datatable/button-ext/dataTables.buttons.min.js"></script>
+    <script src="~/plugins/table/datatable/button-ext/jszip.min.js"></script>
+    <script src="~/plugins/table/datatable/button-ext/buttons.html5.min.js"></script>
+    <script src="~/plugins/table/datatable/button-ext/buttons.print.min.js"></script>
+    <script src="~/plugins/countdown/jquery.countdown.min.js"></script>
+    <script src="~/assets/js/components/custom-countdown.js"></script>
+    <script src="~/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="~/plugins/bootstrap-touchspin/custom-bootstrap-touchspin.js"></script>
+    <script src="~/plugins/select2/select2.min.js"></script>
+    <script src="~/plugins/select2/custom-select2.js"></script>
+
+    <script src="~/plugins/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="~/assets/js/clipboard/clipboard.min.js"></script>
+    <script src="~/assets/js/forms/custom-clipboard.js"></script>
+    <script src="~/plugins/fullcalendar/moment.min.js"></script>
+    <script src="~/plugins/flatpickr/flatpickr.js"></script>
+    <script src="~/plugins/fullcalendar/fullcalendar.min.js"></script>
+    <script src="~/plugins/fullcalendar/custom-fullcalendar.advance.js"></script>
+    <script src="~/plugins/drag-and-drop/dragula/dragula.min.js"></script>
+    <script src="~/plugins/drag-and-drop/dragula/custom-dragula.js"></script>
+    <script src="~/assets/js/users/account-settings.js"></script>
+    <script src="~/plugins/dropify/dropify.min.js"></script>
+    <script src="~/plugins/blockui/jquery.blockUI.min.js"></script>
+    <script src="~/assets/js/elements/custom-search.js"></script>
+<<<<<<< HEAD
+    <script src="~/plugins/sweetalerts/sweetalert2.min.js"></script>
+    <script src="~/plugins/sweetalerts/custom-sweetalert.js"></script>
+    <script src="~/assets/js/apps/invoice.js"></script>
+    <script src="~/assets/js/dashboard/dash_2.js"></script>
+=======
+    <script src="~/assets/js/scrollspyNav.js"></script>
+    <script src="~/plugins/sweetalerts/sweetalert2.min.js"></script>
+    <script src="~/plugins/sweetalerts/custom-sweetalert.js"></script>
+
+>>>>>>> 8d4436eda532d4ecd69a3c9dcee16a7bea0dd548
+    <script>
+        $(document).ready(function () {
+            $('table.multi-table').DataTable({
+                responsive: true,
+                dom: '<"row"<"col-md-12"<"row"<"col-md-6"B><"col-md-6"f> > ><"col-md-12"rt> <"col-md-12"<"row"<"col-md-5"i><"col-md-7"p>>> >',
+                buttons: {
+                    buttons: [
+                        { extend: 'copy', className: 'btn' },
+                        { extend: 'csv', className: 'btn' },
+                        { extend: 'excel', className: 'btn' },
+                        { extend: 'print', className: 'btn' }
+                    ]
+                },
+
+                "oLanguage": {
+                    "oPaginate": { "sPrevious": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>', "sNext": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>' },
+                    "sInfo": "Showing page _PAGE_ of _PAGES_",
+                    "sSearch": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>',
+                    "sSearchPlaceholder": "Search...",
+                    "sLengthMenu": "Results :  _MENU_",
+                },
+                "stripeClasses": [],
+                "lengthMenu": [7, 10, 20, 50],
+                "pageLength": 7
+
+            });
+        });
+
+
+
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('table.posdatatable').DataTable({
+                responsive: true,
+                dom: '<"row"<"col-md-12"<"row"<"col-md-6"B><"col-md-6"f> > ><"col-md-12"rt> <"col-md-12"<"row"<"col-md-5"i><"col-md-7"p>>> >',
+                buttons: {
+                    buttons: [
+                        { extend: 'copy', className: 'btn' },
+                        { extend: 'csv', className: 'btn' },
+                        { extend: 'excel', className: 'btn' },
+                        { extend: 'print', className: 'btn' }
+                    ]
+                },
+
+                "oLanguage": {
+                    "oPaginate": { "sPrevious": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>', "sNext": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>' },
+                    "sInfo": "Showing page _PAGE_ of _PAGES_",
+                    "sSearch": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>',
+                    "sSearchPlaceholder": "Search...",
+                    "sLengthMenu": "Results :  _MENU_",
+                },
+                "stripeClasses": [],
+                "lengthMenu": [7, 10, 20, 50],
+                "pageLength": 7
+
+            });
+        });
+
+
+
+
+    </script>
+    <script>
+        var getInputStatus = document.getElementById('radio-6');
+        var getPricingContainer = document.getElementsByClassName('pricing-plans-container')[0];
+        var getYearlySwitch = document.getElementsByClassName('billed-yearly-radio')[0];
+        getInputStatus.addEventListener('change', function () {
+            var isChecked = getInputStatus.checked;
+            if (isChecked) {
+                getPricingContainer.classList.add("billed-yearly");
+                getYearlySwitch.classList.add("billed-yearly-switch");
+            } else {
+                getYearlySwitch.classList.remove("billed-yearly-switch");
+                getPricingContainer.classList.remove("billed-yearly");
+            }
+        })
+    </script>
+    <script>
+        $('#quotationalert').on('click', function () {
+            swal({
+                title: '',
+                type: 'info',
+                html:
+                    'Your Quotation was succesfully created</b>, ' +
+                    'Would you like to see it',
+
+                showCloseButton: true,
+                showCancelButton: true,
+                focusConfirm: false,
+                confirmButtonText:
+                    '<a href="/Home/QuotationNote/"><i class="flaticon-checked-1"></i> Yes</a>',
+                confirmButtonAriaLabel: 'Thumbs up, great!',
+                cancelButtonText:
+                    '<i class="flaticon-cancel-circle"></i> No',
+                cancelButtonAriaLabel: 'Thumbs down',
+                padding: '2em'
+            })
+
+        })
+    </script>
+    <script>
+        checkall('todoAll', 'todochkbox');
+        $('[data-toggle="tooltip"]').tooltip()
+    </script>
+    <script>
+        var ss = $(".basic").select2({
+            tags: true,
+        });
+    </script>
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>
